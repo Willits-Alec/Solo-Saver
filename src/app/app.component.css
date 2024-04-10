@@ -1,0 +1,107 @@
+/* Reset box sizing */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  /* Global styles */
+  html,
+  body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #121212; /* Dark background color */
+    font-family: "Quicksand", sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333; /* Darker background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  /* Header content container */
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Navigation styles */
+  nav {
+    flex-grow: 1; /* Allow navigation to grow and take up remaining space */
+    text-align: center; /* Center-align navigation items */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: bold; /* Make navigation links bold */
+    transition: color 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  nav ul li a:hover {
+    color: #F57C00; /* Accent color on hover */
+  }
+  
+  /* Login button styles */
+  .login-btn {
+    background-color: #FF9800; /* Accent color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .login-btn:hover {
+    background-color: #F57C00; /* Darker shade of accent color on hover */
+  }
+  
+  /* Main content styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333; /* Darker background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    position: fixed; /* Make the footer fixed */
+    bottom: 0; /* Stick the footer to the bottom */
+    width: 100%; /* Take the full width of the viewport */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  

@@ -1,0 +1,12 @@
+<h2>{{ transaction._id ? 'Edit' : 'Add' }} Transaction</h2>
+<form (ngSubmit)="saveTransaction()">
+  <div>
+    <label>Description:</label>
+    <input type="text" [(ngModel)]="transaction.description" name="description" required>
+  </div>
+  <div>
+    <label>Amount:</label>
+    <input type="number" [(ngModel)]="transaction.amount" name="amount" required>
+  </div>
+  <button type="submit">{{ transaction._id ? 'Update' : 'Add' }} Transaction</button>
+</form>
